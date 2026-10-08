@@ -9,6 +9,12 @@ header {
 
 nav {
     background-color: lightgray;
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%;
 }
 
 main {
@@ -20,10 +26,13 @@ footer {
     background-color: lightblue;
 }
 
+/* Comment out the old li styling */
+/*
 li {
     display: inline-block;
     width: 150px;
 }
+*/
 
 h1 {
     text-align: center;
@@ -33,4 +42,25 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+/* Grid layout for Neighborhood page */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Only images inside .grid */
+.grid img {
+    width: 100%;
+}
+
+/* Flex layout for Parks page */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
